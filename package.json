@@ -1,0 +1,31 @@
+{
+  "name": "vite-plugin-aframe-three",
+  "version": "1.0.0",
+  "description": "Vite plugin to automatically alias three to A-Frame's super-three ",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "aframe"
+  ],
+  "author": "Noeri Huisman",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts && cp src/fake-three.js dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrxz/vite-plugin-aframe-three"
+  },
+  "bugs": {
+    "url": "https://github.com/mrxz/vite-plugin-aframe-three/issues"
+  },
+  "packageManager": "yarn@3.2.0",
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2"
+  }
+}
