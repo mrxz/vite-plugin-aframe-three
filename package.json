@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-aframe-three",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vite plugin to automatically alias three to A-Frame's super-three ",
   "keywords": [
     "vite",

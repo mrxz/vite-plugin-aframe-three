@@ -9,12 +9,11 @@ export function aframeThreePlugin(): Plugin {
         resolve: {
           alias: [<Alias>{
             find: 'three',
-            replacement: 'three',
+            replacement: 'super-three',
             customResolver: (source: string, importer: string) => {
-              if(source === 'three') {
+              if(source === 'super-three') {
                 return resolve(__dirname, 'fake-three.js');
               }
-              return `super-three/${source.substring(source.indexOf('/') + 1)}`;
             }
           }]
         }
