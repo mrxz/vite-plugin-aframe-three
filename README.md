@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Deprecated** From version 1.7.0 onwards A-Frame offers a ESM compatible bundle without `(super-)three`.
+
 # vite-plugin-aframe-three
 This Vite plugin automatically sets up an alias for `three` to A-Frame's internally bundled `super-three` and makes sure that it's only imported once. This prevents multiple instances of THREE.js, and makes using A-Frame with TypeScript easier.
 
